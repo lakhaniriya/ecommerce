@@ -65,6 +65,12 @@ newErrors.email = "Plese valid Email"
         </div>
 
         <button onClick={handleSubmit} className='w-full cursor-pointer bg-blue-500 text-white p-2 rounded-sm'>Login</button>
+        <button
+  onClick={() => route.push("/signup")}
+  className="w-full mt-3 border border-blue-500 text-blue-500 p-2 rounded-sm hover:bg-blue-50 cursor-pointer"
+>
+  Create Account
+</button>
     </div>
 
   </div>

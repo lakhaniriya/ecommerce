@@ -14,6 +14,18 @@ import orderRoutes from './routes/orderRoute.js';
 import paymentRoutes from './routes/paymentRoute.js'
 dotenv.config()
 const app = express();
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://ecommerce-kappa-sandy.vercel.app"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: false,
+  })
+);
+
+app.options("*", cors());
 app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRoutes);
