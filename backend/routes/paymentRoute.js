@@ -3,7 +3,7 @@ import {
   createOrder,
   verifyPayment,
 } from "../controllers/paymentController.js";
-import { protect } from "../middleware/authMiddleware.js";
+import { protect } from "../middleware/AuthMiddleware.js";
 
 const router = express.Router();
 
