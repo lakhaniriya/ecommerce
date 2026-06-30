@@ -42,7 +42,7 @@ const server = http.createServer(app);
 
 connnetDb();
 
-const PORT = 10000;
+const PORT = process.env.PORT || 10000;
 
 
 
